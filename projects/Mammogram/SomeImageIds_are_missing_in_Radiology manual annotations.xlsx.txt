@@ -1,0 +1,25 @@
+NOTE:
+
+We have found the following errors by running ImageMaskDatasetGenerator.py script.
+
+>python ImageMaskDatasetGenerator.py >logs.txt
+Traceback (most recent call last):
+  File "ImageMaskDatasetGenerator.py", line 103, in create_image_and_mask
+    BorM = self.categories[image_id]
+KeyError: 'P3_L_CM_CC'
+Traceback (most recent call last):
+  File "ImageMaskDatasetGenerator.py", line 103, in create_image_and_mask
+    BorM = self.categories[image_id]
+KeyError: 'P10_R_DM_CC'
+Traceback (most recent call last):
+  File "ImageMaskDatasetGenerator.py", line 103, in create_image_and_mask
+    BorM = self.categories[image_id]
+KeyError: 'P10_R_DM_MLO'
+
+This implies that three Image_ids
+
+'P3_L_CM_CC'
+'P10_R_DM_CC'
+'P10_R_DM_MLO'
+
+are missing in Radiology manual annotations.xlsx
