@@ -113,7 +113,10 @@ data defined in Radiology_hand_drawn_segmentations_v2.csv
 
 3 Create rotated and flipped image and mask files to augment the resized image and mask files.
 </pre>
-
+<b>NOTE</b><br>
+<a href="./projects/Mammogram/SomeImageIds_are_missing_in_Radiology manual annotations.xlsx.txt">
+Some ImageIds_are_missing_in_Radiology manual annotations.xlsx</a>
+<br>
 The created <b>CDD-CESM-master</b> dataset has the following folder structure.<br>
 <pre>
 CDD-CESM-master
