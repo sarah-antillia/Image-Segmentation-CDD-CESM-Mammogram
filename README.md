@@ -319,3 +319,10 @@ https://www.nature.com/articles/s41597-022-01238-0
 https://github.com/omar-mohamed/CDD-CESM-Dataset
 </pre>
 
+<h3>Appendix</h3>
+Model graph<br>
+<img src="./projects/Mammogram/model.png"><br>
+<br>
+Model summary<br>
+<pre>
+<a href="./projects/Mammogram/summary.txt">summary.txt</a><br>
