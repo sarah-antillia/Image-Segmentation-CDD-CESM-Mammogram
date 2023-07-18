@@ -3,7 +3,7 @@
 1 Image-Segmentation-CDD-CESM-Mammogram 
 </h2>
 <p>
-This is an experimental project for Image-Segmentation of Mammogram by using
+This is an experimental project for Image Segmentation of Mammogram by using
  <a href="https://github.com/atlan-antillia/Tensorflow-Slightly-Flexible-UNet">Tensorflow-Slightly-Flexible-UNet</a> Model,
 which is a typical classic Tensorflow2 UNet implementation <a href="./TensorflowUNet.py">TensorflowUNet.py</a> 
 <p>
