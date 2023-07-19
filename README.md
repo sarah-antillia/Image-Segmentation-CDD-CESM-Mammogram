@@ -106,10 +106,16 @@ The script performs the following image processings.<br>
   Low energy images of CDD-CESM
   Subtracted images of CDD-CESM
 by referencing Radiology-manual-annotations.csv file.
+</pre>
 
+<pre>
 2 Create 512x512 square mask jpg files corresponding to those "Malignant" image files by using 
 circles, ellipses and polygons json data defined in Radiology_hand_drawn_segmentations_v2.csv.
+</pre>
+For example, <b>P2_L_DM_CC.jpg</b> image has four segmented polygon-regions as shown below.<br> 
+<img src="./asset/Radiology_hand_drawn_segmentations_v2.csv.png"><br>
 
+<pre>
 3 Create rotated and flipped image and mask files to augment the resized image and mask files.
 </pre>
 <b>NOTE</b><br>
