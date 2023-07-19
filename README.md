@@ -98,7 +98,7 @@ This csv file will be used to identify a category ("Benign", "Malgnant") of each
 3.2 Create Malignant image and mask dataset
 </h3>
 By using Python script <a href="./projects/Mammogram/generator/ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a>,
- we have created <b>CDD-CESM-master</b> dataset from the original image jpg files and mask data files
+ we have created <b>Malignant CDD-CESM-master</b> dataset from the original image jpg files and mask data files
 in the <b>CDD-CESM</b> folder.<br>
 The script performs the following image processings.<br>
 <pre>
@@ -107,7 +107,7 @@ The script performs the following image processings.<br>
   Subtracted images of CDD-CESM
 by referencing Radiology-manual-annotations.csv file.
 </pre>
-We are able to identiy a category("Benign, "Malignant") of each image file of those 
+We are able to identify a category("Benign, "Malignant") of each image file of those 
 folders by using <b>Radiology-manual-annotations.csv</b> file.<br>
 For example, <b>P316_L_DM_CC</b> image is "Malignant" as shown below.<br> 
 <img src="./asset/Radiology-manual-annotations.csv.png"  width="720" height="auto"><br>
@@ -163,7 +163,7 @@ By using Python script <a href="./projects/Mammogram/generator/split_master.py">
 </h2>
  We have trained Mammogram TensorflowUNet Model by using the following
  <b>train_eval_infer.config</b> file. <br>
-Please move to ./projects/Mammogram and run the following bat file.<br>
+Please move to ./projects/Mammogram directory and run the following bat file.<br>
 <pre>
 >1.train.bat
 </pre>
@@ -256,6 +256,7 @@ We have also tried to infer the segmented region for <pre>
 images_dir    = "./projects/Mammogram/Mammogram/test/images" 
 </pre> dataset defined in <b>train_eval_infer.config</b>,
  by using our Pretrained Mammogram UNet Model.<br>
+Please move to ./projects/Mammogram directory, and run the following bat file.<br>
 
 <pre>
 >3.infer.bat
@@ -318,7 +319,7 @@ Clark K, Vendt B, Smith K, Freymann J, Kirby J, Koppel P, Moore S, Phillips S, M
  Journal of Digital Imaging, Volume 26, Number 6, December, 2013, pp 1045-1057. DOI: 10.1007/s10278-013-9622-7
 </pre>
 
-<b>2.Categorized contrast enhanced mammography dataset for diagnostic and artificial intelligence research
+<b>2. Categorized contrast enhanced mammography dataset for diagnostic and artificial intelligence research
 </b><br>
 Rana Khaled, Maha Helal, Omar Alfarghaly, Omnia Mokhtar, Abeer Elkorany,<br>
 Hebatalla El Kassas & Aly Fahmy<br>
@@ -326,16 +327,21 @@ Hebatalla El Kassas & Aly Fahmy<br>
 https://www.nature.com/articles/s41597-022-01238-0
 </pre>
 
-<b>3.CDD-CESM-Dataset
+<b>3. CDD-CESM-Dataset
 </b><br>
 <pre>
 https://github.com/omar-mohamed/CDD-CESM-Dataset
 </pre>
 
 <h3>Appendix</h3>
-Model graph<br>
+Please move to ./projects/Mammogram directory, and run the following bat file.<br>
+<pre>
+>model_inspect.bat
+</pre>
+
+1. TensorflowUNet Model graph<br>
 <img src="./projects/Mammogram/model.png"><br>
 <br>
-Model summary<br>
+2. Model summary<br>
 <pre>
 <a href="./projects/Mammogram/summary.txt">summary.txt</a><br>
