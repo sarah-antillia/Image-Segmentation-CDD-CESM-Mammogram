@@ -107,7 +107,7 @@ The script performs the following image processings.<br>
   Subtracted images of CDD-CESM
 by referencing Radiology-manual-annotations.csv file.
 </pre>
-We are able to identify a category("Benign, "Malignant") of each image file of those 
+We are able to identify a category("Benign, "Malignant") of each image file in those 
 folders by using <b>Radiology-manual-annotations.csv</b> file.<br>
 For example, <b>P316_L_DM_CC</b> image is "Malignant" as shown below.<br> 
 <img src="./asset/Radiology-manual-annotations.csv.png"  width="720" height="auto"><br>
@@ -334,6 +334,7 @@ https://github.com/omar-mohamed/CDD-CESM-Dataset
 </pre>
 
 <h3>Appendix</h3>
+<b>Mammogram UNet Model Inspection</b><br>
 Please move to ./projects/Mammogram directory, and run the following bat file.<br>
 <pre>
 >model_inspect.bat
