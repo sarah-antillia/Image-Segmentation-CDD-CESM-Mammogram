@@ -105,26 +105,26 @@ The script performs the following image processings.<br>
 1 Resize all "Malignant" jpg files to 512x512 in the following folders 
   Low energy images of CDD-CESM
   Subtracted images of CDD-CESM
-by referencing Radiology-manual-annotations.csv file.
+by using Radiology-manual-annotations.csv file.
 </pre>
 We are able to identify a category("Benign, "Malignant") of each image file in those 
 folders by using <b>Radiology-manual-annotations.csv</b> file.<br>
-For example, <b>P316_L_DM_CC</b> image is "Malignant" as shown below.<br> 
-<img src="./asset/Radiology-manual-annotations.csv.png"  width="720" height="auto"><br>
-
+For example, <b>P316_L_DM_CC</b> image is "Malignant" as shown below.<br>
+<img src="./asset/Radiology-manual-annotations.csv.png"  width="720" height="auto">
 <pre>
 2 Create 512x512 square mask jpg files corresponding to those "Malignant" image files by using 
 circles, ellipses and polygons json data defined in Radiology_hand_drawn_segmentations_v2.csv.
 </pre>
-For example, <b>P316_L_DM_CC.jpg</b> image has four segmented regions (circles and polygons) as shown below.<br> 
+For example, the malignant <b>P316_L_DM_CC.jpg</b> image has four segmented regions (2 circles 
+and 2 polygons) as shown below.<br>
 <img src="./asset/Radiology_hand_drawn_segmentations_v2.csv.png" width="720" height="auto"><br>
-
 <pre>
 3 Create rotated and flipped image and mask files to augment the resized image and mask files.
 </pre>
 <b>NOTE</b><br>
 <a href="./projects/Mammogram/SomeImageIds_are_missing_in_Radiology manual annotations.xlsx.txt">
-Some Image_Ids are missing in Radiology manual annotations.xlsx file.</a>
+Some Image_names in <b>Radiology_hand_drawn_segmentations_v2.csv</b> are missing in 
+<b>Radiology manual annotations.xlsx</b> file.</a>
 <br>
 <br>
 The created <b>CDD-CESM-master</b> dataset has the following folder structure.<br>
