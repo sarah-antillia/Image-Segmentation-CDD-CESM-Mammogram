@@ -71,7 +71,7 @@ Image-Segmentation-CDD-CESM-Mammogram
 <h3>
 3.1 Download master dataset
 </h3>
-  Please download the original image and mask dataset and assocated annotation and segmentation files from the following link<br>
+  Please download the original image and assocated annotation and segmentation files from the following link.<br>
 <pre>
 Categorized Digital Database for Low energy and Subtracted Contrast Enhanced Spectral Mammography images (CDD-CESM)
 https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=109379611#109379611bcab02c187174a288dbcbf95d26179e8
@@ -108,13 +108,13 @@ The script performs the following image processings.<br>
 by referencing Radiology-manual-annotations.csv file.
 
 2 Create 512x512 square mask jpg files corresponding to those "Malignant" image files by using 
-circles, ellipses and polygons data defined in Radiology_hand_drawn_segmentations_v2.csv
+circles, ellipses and polygons json data defined in Radiology_hand_drawn_segmentations_v2.csv.
 
 3 Create rotated and flipped image and mask files to augment the resized image and mask files.
 </pre>
 <b>NOTE</b><br>
 <a href="./projects/Mammogram/SomeImageIds_are_missing_in_Radiology manual annotations.xlsx.txt">
-Some ImageIds_are_missing_in_Radiology manual annotations.xlsx</a>
+Some Image_Ids are missing in Radiology manual annotations.xlsx file.</a>
 <br>
 <br>
 The created <b>CDD-CESM-master</b> dataset has the following folder structure.<br>
