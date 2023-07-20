@@ -1,4 +1,4 @@
-# Image-Segmentation-CDD-CESM-Mammogram (2023/07/18)
+# Image-Segmentation-CDD-CESM-Mammogram (Updated 2023/07/20)
 <h2>
 1 Image-Segmentation-CDD-CESM-Mammogram 
 </h2>
@@ -101,32 +101,35 @@ By using Python script <a href="./projects/Mammogram/generator/ImageMaskDatasetG
  we have created <b>Malignant CDD-CESM-master</b> dataset from the original image jpg files and mask data files
 in the <b>CDD-CESM</b> folder.<br>
 The script performs the following image processings.<br>
+<h3>3.2.1 Resize Malignant images to 512x512</h3>
+We have resized all "Malignant" image files to 512x512 in the following folders.
 <pre>
-1 Resize all "Malignant" jpg files to 512x512 in the following folders 
   Low energy images of CDD-CESM
   Subtracted images of CDD-CESM
-by using Radiology-manual-annotations.csv file.
 </pre>
-We are able to identify a category("Benign, "Malignant") of each image file in those 
+We are able to identify a category("Benign, "Malignant") of each image in those 
 folders by using <b>Radiology-manual-annotations.csv</b> file.<br>
 For example, <b>P316_L_DM_CC</b> image is "Malignant" as shown below.<br>
 <img src="./asset/Radiology-manual-annotations.csv.png"  width="720" height="auto">
-<pre>
-2 Create 512x512 square mask jpg files corresponding to those "Malignant" image files by using 
-circles, ellipses and polygons json data defined in Radiology_hand_drawn_segmentations_v2.csv.
-</pre>
+
+<h3>3.2.2 Create 512x512 square mask files </h3>
+We have created 512x512 square mask files corresponding to those "Malignant" image by using 
+circles, ellipses and polygons json data defined in <b>Radiology_hand_drawn_segmentations_v2.csv</b>.<br>
 For example, the malignant <b>P316_L_DM_CC.jpg</b> image has four segmented regions (2 circles 
 and 2 polygons) as shown below.<br>
 <img src="./asset/Radiology_hand_drawn_segmentations_v2.csv.png" width="720" height="auto"><br>
-<pre>
-3 Create rotated and flipped image and mask files to augment the resized image and mask files.
-</pre>
+<h3>3.2.3 Augment images and masks </h3>
+We have created flipped and mirrored image and mask files to augment the 512x512 image and mask files.
+<br>
+<br>
 <b>NOTE</b><br>
 <a href="./projects/Mammogram/SomeImageIds_are_missing_in_Radiology manual annotations.xlsx.txt">
 Some Image_names in <b>Radiology_hand_drawn_segmentations_v2.csv</b> are missing in 
 <b>Radiology manual annotations.xlsx</b> file.</a>
 <br>
 <br>
+<h3>3.2.4 CDD-CESM-master </h3>
+
 The created <b>CDD-CESM-master</b> dataset has the following folder structure.<br>
 <pre>
 CDD-CESM-master
