@@ -113,10 +113,10 @@ For example, <b>P316_L_DM_CC</b> image is "Malignant" as shown below.<br>
 <img src="./asset/Radiology-manual-annotations.csv.png"  width="720" height="auto">
 
 <h3>3.2.2 Create 512x512 square mask files </h3>
-We have created 512x512 square mask files corresponding to those "Malignant" image by using 
+We have created 512x512 square mask files corresponding to those "Malignant" images by using 
 circles, ellipses and polygons json data defined in <b>Radiology_hand_drawn_segmentations_v2.csv</b>.<br>
-For example, the malignant <b>P316_L_DM_CC.jpg</b> image has four segmented regions (2 circles 
-and 2 polygons) as shown below.<br>
+For example, the malignant <b>P316_L_DM_CC.jpg</b> image has four segmented regions (two circles 
+and two polygons) as shown below.<br>
 <img src="./asset/Radiology_hand_drawn_segmentations_v2.csv.png" width="720" height="auto"><br>
 <h3>3.2.3 Augment images and masks </h3>
 We have created flipped and mirrored image and mask files to augment the 512x512 image and mask files.
