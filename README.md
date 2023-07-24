@@ -89,7 +89,7 @@ CDD-CESM
 ├─Radiology-manual-annotations.csv
 └─Radiology-manual-annotations.xlsx
 </pre>,
-where Radiology-manual-annotations.csv is just a converted csv file from the original xlsx file.<br>
+where Radiology-manual-annotations.csv is just a converted csv file from the original xlsx file by us.<br>
 <pre>
  Radiology manual annotations.xlsx
 </pre>
