@@ -174,10 +174,9 @@ Please move to ./projects/Mammogram directory and run the following bat file.<br
 <pre>
 >python ../../TensorflowUNetTrainer.py train_eval_infer.config
 </pre>
-
 <pre>
 ; train_eval_infer.config
-; for Tensorflow-Attention-UNet
+; for Mammogram TensorflowUNet Model
 ; 2023/07/18 antillia.com
 
 [model]
@@ -224,6 +223,12 @@ binarize  = True
 threshold = 74
 </pre>
 
+Please note that image size setting of the config file to be the same size of our Mammogram image dataset.<br>
+<pre>
+[model]
+image_width    = 512
+image_height   = 512
+</pre>
 
 The training process has just been stopped at epoch 40 by an early-stopping callback as shown below.<br><br>
 <img src="./asset/train_console_at_epoch_40_0718.png" width="720" height="auto"><br>
@@ -334,6 +339,12 @@ https://www.nature.com/articles/s41597-022-01238-0
 </b><br>
 <pre>
 https://github.com/omar-mohamed/CDD-CESM-Dataset
+</pre>
+
+<b>4. Breast Cancer Segmentation Methods: Current Status and Future Potentials</b><br>
+Epimack Michael, He Ma, Hong Li, Frank Kulwa, and Jing<br>
+<pre>
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8321730/
 </pre>
 
 <h3>Appendix</h3>
